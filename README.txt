@@ -1,13 +1,12 @@
-シフト給与メーター V7（PWA版）
+シフト給与メーター V8（iPhone UI / 複数勤務先対応）
 
-【iPhoneでアプリとして使う方法】
-1. このフォルダ一式を HTTPS のWebサーバーへアップロードします。
-   例: GitHub Pages / Netlify / Vercel
-2. iPhoneのSafariで公開URLを開きます。
-3. 共有ボタン →「ホーム画面に追加」→「追加」。
-4. ホーム画面の「シフト給与」アイコンから起動できます。
+主な変更
+- 下部固定タブバー：シフト / 勤務先 / 設定
+- 勤務先追加を独立タブ化
+- iPhone風のカード、入力欄、ボタン、セーフエリア対応
+- 既存のシフト・給与・給与明細・控除データを引き継ぐ設計
+- PWA / オフライン対応
 
-【重要】
-- Service Workerは file:// では動きません。HTTPSで公開してください。
-- データはブラウザのlocalStorageに保存されます。SafariのWebサイトデータを消すと消えるため、重要な実績は別途バックアップしてください。
-- standalone.html は単体確認用です。PWAとして使うときは index.html を公開してください。
+GitHub Pagesで更新する場合
+index.html / standalone.html / manifest.webmanifest / sw.js を上書きしてください。
+iconsフォルダは好きなアイコンをそのまま使えます。
